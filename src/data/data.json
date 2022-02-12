@@ -1,4 +1,10 @@
 {
+  "CompanyName": "Beauty Pte Ltd",
+  "Slogan": {
+    "main": "Beauty Awaits",
+    "sub": "Be proud, Be you"
+  },
+  "IntroButtonText": "Get Started",
   "images": [
     {
       "src": "images/img-9.jpg",

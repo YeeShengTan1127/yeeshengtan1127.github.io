@@ -1,32 +1,29 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
 import "./NavBar.css";
+import data from "../data/data.json";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) setButton(false);
-    else setButton(true);
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
+  window.addEventListener("scroll", (e) => {
+    const nav = document.querySelector(".navbar");
+    if (window.pageYOffset > 0) {
+      nav.classList.add("add-shadow");
+    } else {
+      nav.classList.remove("add-shadow");
+    }
+  });
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            {"Beauty Pte Ltd"}
+            {data.CompanyName}
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -51,7 +48,6 @@ function NavBar() {
                 Services
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 to="/contacts"
@@ -62,7 +58,6 @@ function NavBar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle={"btn--outline"}>Test</Button>}
         </div>
       </nav>
     </>

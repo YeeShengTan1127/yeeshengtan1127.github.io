@@ -1,13 +1,18 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: #fff;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  font-weight: bold;
   position: sticky;
   top: 0;
   z-index: 999;
+}
+
+.add-shadow {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 0px 10px 0px;
 }
 
 .navbar-container {
@@ -19,7 +24,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #f999b7;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -50,7 +55,7 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: #f999b7;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -59,12 +64,13 @@
 }
 
 .nav-links:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid #f999b7;
+  font-weight: bold;
   transition: all 0.2s ease-out;
 }
 
 .fa-bars {
-  color: #fff;
+  color: #f999b7;
 }
 
 .nav-links-mobile {
@@ -84,7 +90,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     position: absolute;
     top: 80px;
     left: -100%;
@@ -93,7 +99,8 @@
   }
 
   .nav-menu.active {
-    background: #242222;
+    justify-content: flex-start;
+    background: #fff;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -108,9 +115,11 @@
   }
 
   .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
+    background-color: #f999b7;
+    color: #fff;
     border-radius: 0;
+    transition: background-color 0.2s ease-in;
+    border-bottom: none;
   }
 
   .navbar-logo {
@@ -131,7 +140,7 @@
   }
 
   .fa-times {
-    color: #fff;
+    color: #f999b7;
     font-size: 2rem;
   }
 
