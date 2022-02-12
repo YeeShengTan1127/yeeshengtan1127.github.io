@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import "./NavBar.css";
+import data from "../data/data.json";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -26,7 +27,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            {"Beauty Pte Ltd"}
+            {data.CompanyName}
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
