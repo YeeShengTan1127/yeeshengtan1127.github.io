@@ -15,7 +15,7 @@ function HeroSection() {
           className="btns"
           buttonStyle={"btn--outline--white"}
           buttonSize={"btn--large"}
-          to={"/services"}
+          to={"#Menu"}
         >
           {data.IntroButtonText}
         </Button>

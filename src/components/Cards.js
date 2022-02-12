@@ -3,11 +3,11 @@ import CardItem from "./CardItem";
 import "./Cards.css";
 import data from "../data/data.json";
 
-function Cards() {
+function Cards({ ExtraInfo }) {
   return (
-    <div className="cards">
-      <h1>Check out these EPIC Destinations!</h1>
+    <div id={"Menu"} className="cards">
       <div className="cards__container">
+        {ExtraInfo}
         <div className="cards__wrapper">
           <ul className="cards__items">
             {data.images.map((e, index) => {

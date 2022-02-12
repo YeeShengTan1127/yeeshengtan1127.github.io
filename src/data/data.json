@@ -5,39 +5,41 @@
     "sub": "Be proud, Be you"
   },
   "IntroButtonText": "Get Started",
+  "HomePageTitle": "Singapore's Leading Beauty Salon",
+  "HomePageTitleDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec s, nascetur ridiculus mus. Donec quam felis, ultricies nec olor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec s, nascetur ridiculus mus",
   "images": [
     {
-      "src": "images/img-9.jpg",
-      "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
+      "src": "images/salon-card.jpg",
+      "text": "Singapore's Leading Beauty Salon",
       "label": "About",
       "path": "/about"
     },
     {
-      "src": "images/img-2.jpg",
+      "src": "images/salon-services.jpg",
       "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
       "label": "Services",
       "path": "/services"
     },
     {
-      "src": "images/img-1.jpg",
+      "src": "images/salon-contacts.jpg",
       "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
       "label": "Contacts",
       "path": "/contacts"
     },
     {
-      "src": "images/img-8.jpg",
-      "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
+      "src": "images/salon-card.jpg",
+      "text": "Singapore's Leading Beauty Salon",
       "label": "About",
       "path": "/about"
     },
     {
-      "src": "images/img-3.jpg",
+      "src": "images/salon-services.jpg",
       "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
       "label": "Services",
       "path": "/services"
     },
     {
-      "src": "images/img-4.jpg",
+      "src": "images/salon-contacts.jpg",
       "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
       "label": "Contacts",
       "path": "/contacts"

@@ -18,11 +18,22 @@ function NavBar() {
     }
   });
 
+  const backToTop = () => {
+    window.scroll(0, 0);
+  };
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link
+            to="/"
+            className="navbar-logo"
+            onClick={() => {
+              closeMobileMenu();
+              backToTop();
+            }}
+          >
             {data.CompanyName}
           </Link>
           <div className="menu-icon" onClick={handleClick}>
