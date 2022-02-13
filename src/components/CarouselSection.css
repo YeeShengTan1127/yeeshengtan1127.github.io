@@ -1,0 +1,18 @@
+.carousel-caption h2 {
+  font-size: 3rem;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.carousel-caption {
+  cursor: pointer;
+}
+
+.carousel-caption:hover h2 {
+  font-size: 3.5rem;
+}
+
+.carousel-item-img {
+  max-height: 260px;
+  object-fit: cover;
+  filter: brightness(50%);
+}

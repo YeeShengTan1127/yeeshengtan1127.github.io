@@ -6,15 +6,28 @@
   scroll-behavior: smooth;
 }
 
-.home,
-.services,
-.contacts,
-.about {
+.home {
   display: flex;
   height: 90vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+}
+
+.services,
+.contacts,
+.about {
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.services,
+.contacts,
+.about {
+  margin-bottom: 0 !important;
 }
 
 .btn:hover {
@@ -26,7 +39,8 @@ a:hover {
 }
 
 .services {
-  background-image: url("/public/images/img-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/public/images/salon-services2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,7 +49,7 @@ a:hover {
 }
 
 .contacts {
-  background-image: url("/public/images/img-1.jpg");
+  background-image: url("/public/images/img-services.jpg");
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -44,10 +58,26 @@ a:hover {
 }
 
 .about {
-  background-image: url("/public/images/img-8.jpg");
+  background-image: url("/public/images/img-services.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
+}
+
+@media screen and (max-width: 960px) {
+  .services,
+  .contacts,
+  .about {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services,
+  .contacts,
+  .about {
+    font-size: 50px;
+  }
 }

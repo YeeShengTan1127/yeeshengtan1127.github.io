@@ -12,9 +12,8 @@ function Cards({ ExtraInfo }) {
         <Row xs={1} md={3} className={"g-4"}>
           {data.images.map((e, index) => {
             return (
-              <Col>
+              <Col key={"cardItem-" + index}>
                 <CardItem
-                  key={"cardItem-" + index}
                   src={e.src}
                   text={e.text}
                   label={e.label}
