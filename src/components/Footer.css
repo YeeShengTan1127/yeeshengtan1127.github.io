@@ -1,5 +1,5 @@
 .footer-container {
-  background-color: #edeff1;
+  background-color: #fee3ec;
   padding: 10px 0 10px 0;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@
 
 .social-media-wrap {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 90%;
   max-width: 1000px;

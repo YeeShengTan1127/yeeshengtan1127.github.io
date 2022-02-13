@@ -9,40 +9,40 @@
   "HomePageTitleDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec s, nascetur ridiculus mus. Donec quam felis, ultricies nec olor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec s, nascetur ridiculus mus",
   "images": [
     {
-      "src": "images/salon-card.jpg",
-      "text": "Singapore's Leading Beauty Salon",
-      "label": "About",
-      "path": "/about"
+      "src": "images/salon-hair.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "label": "Hair Styling",
+      "path": "/services/#HairStyling"
     },
     {
-      "src": "images/salon-services.jpg",
-      "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
-      "label": "Services",
-      "path": "/services"
+      "src": "images/salon-nail.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "label": "Nail Treatment",
+      "path": "/services/#NailTreatment"
     },
     {
-      "src": "images/salon-contacts.jpg",
-      "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
-      "label": "Contacts",
-      "path": "/contacts"
+      "src": "images/salon-facial.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "label": "Facial & Skin Care",
+      "path": "/services/#FacialSkinCare"
     },
     {
-      "src": "images/salon-card.jpg",
-      "text": "Singapore's Leading Beauty Salon",
-      "label": "About",
-      "path": "/about"
+      "src": "images/salon-hairRemoval.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "label": "Hair Removal",
+      "path": "/services/#HairRemoval"
     },
     {
-      "src": "images/salon-services.jpg",
-      "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
-      "label": "Services",
-      "path": "/services"
+      "src": "images/salon-massage.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "label": "Massages",
+      "path": "/services/#Massages"
     },
     {
-      "src": "images/salon-contacts.jpg",
-      "text": "Explore the hidden waterfall deep inside the Amazon Jungle",
-      "label": "Contacts",
-      "path": "/contacts"
+      "src": "images/salon-aroma.jpg",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "label": "Aromatherapy",
+      "path": "/services/#Aromatherapy"
     }
   ]
 }

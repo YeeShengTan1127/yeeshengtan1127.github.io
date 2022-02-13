@@ -11,15 +11,13 @@ function Footer() {
           <div class="footer-link-items">
             <h2>Our Company</h2>
             <Link to="/about">About Us</Link>
-            <Link to="/">Testimonials</Link>
+            <Link to="/">Our Services</Link>
             <Link to="/">Careers</Link>
           </div>
           <div class="footer-link-items">
             <h2>Contact Us</h2>
-            <Link to="/">Contact</Link>
-            <Link to="/">Support</Link>
-            <Link to="/">Destinations</Link>
-            <Link to="/">Sponsorships</Link>
+            <Link to="/">Our Contacts</Link>
+            <Link to="/">Location</Link>
           </div>
           <div class="footer-link-items">
             <h2>Social Media</h2>
@@ -54,11 +52,6 @@ function Footer() {
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
-          <div className="footer-logo">
-            <Link to="/" className="social-logo">
-              {data.CompanyName}
-            </Link>
-          </div>
           <small className="website-rights">
             <i className="fa fa-copyright"></i>{" "}
             {" 2022 " + data.CompanyName + " All Rights Reserved."}
