@@ -7,42 +7,96 @@
   "IntroButtonText": "Get Started",
   "HomePageTitle": "Singapore's Leading Beauty Salon",
   "HomePageTitleDescription": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec s, nascetur ridiculus mus. Donec quam felis, ultricies nec olor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec s, nascetur ridiculus mus",
-  "images": [
+  "services": [
     {
       "src": "/images/salon-hair.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Hair Styling",
-      "path": "/services/#HairStyling"
+      "id": "HairStyling",
+      "path": "/services/HairStyling",
+      "pricelist": [
+        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+      ],
+      "Order": 1
     },
     {
       "src": "/images/salon-nail.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Nail Treatment",
-      "path": "/services/#NailTreatment"
+      "id": "NailTreatment",
+      "path": "/services/NailTreatment",
+      "pricelist": [
+        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+      ],
+      "Order": 2
     },
     {
       "src": "/images/salon-facial.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Facial & Skin Care",
-      "path": "/services/#FacialSkinCare"
+      "id": "FacialSkinCare",
+      "path": "/services/FacialSkinCare",
+      "pricelist": [
+        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+      ],
+      "Order": 3
     },
     {
       "src": "/images/salon-hairRemoval.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Hair Removal",
-      "path": "/services/#HairRemoval"
+      "id": "HairRemoval",
+      "path": "/services/HairRemoval",
+      "pricelist": [
+        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+      ],
+      "Order": 4
     },
     {
       "src": "/images/salon-massage.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Massages",
-      "path": "/services/#Massages"
+      "id": "Massages",
+      "path": "/services/Massages",
+      "pricelist": [
+        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+      ],
+      "Order": 5
     },
     {
       "src": "/images/salon-aroma.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Aromatherapy",
-      "path": "/services/#Aromatherapy"
+      "id": "Aromatherapy",
+      "path": "/services/Aromatherapy",
+      "pricelist": [
+        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+      ],
+      "Order": 6
     }
   ]
 }

@@ -10,7 +10,7 @@ function Cards({ ExtraInfo }) {
       <div className="cards__container">
         {ExtraInfo}
         <Row xs={1} md={3} className={"g-4"}>
-          {data.images.map((e, index) => {
+          {data.services.map((e, index) => {
             return (
               <Col key={"cardItem-" + index}>
                 <CardItem

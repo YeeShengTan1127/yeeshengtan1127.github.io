@@ -1,14 +1,14 @@
 .carousel-caption h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   transition: font-size 0.3s ease-in-out;
 }
 
-.carousel-caption {
+.carousel-wrapper {
   cursor: pointer;
 }
 
 .carousel-caption:hover h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .carousel-item-img {

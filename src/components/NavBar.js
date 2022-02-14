@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./NavBar.css";
 import data from "../data/data.json";
+import DropDown from "./DropDown";
+import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
+  const [dropdown, setDropDown] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    setDropDown(false);
+  };
 
   window.addEventListener("scroll", (e) => {
     const nav = document.querySelector(".navbar");
@@ -20,6 +25,16 @@ function NavBar() {
 
   const backToTop = () => {
     window.scroll(0, 0);
+  };
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) setDropDown(false);
+    else setDropDown(true);
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) setDropDown(dropdown);
+    else setDropDown(false);
   };
 
   return (
@@ -50,16 +65,30 @@ function NavBar() {
                 About
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
               <Link
                 to="/services"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={() => {
+                  console.log(dropdown);
+                  if (window.innerWidth > 960) closeMobileMenu();
+                  else setDropDown(!dropdown);
+                }}
               >
-                Services
+                Services <i className="fas fa-caret-down" />
               </Link>
+              {dropdown && (
+                <DropDown
+                  data={data.services}
+                  closeMobileMenu={closeMobileMenu}
+                />
+              )}
             </li>
-            <li className="nav-item">
+            <li className={dropdown ? "nav-item nav-contacts" : "nav-ite"}>
               <Link
                 to="/contacts"
                 className="nav-links"

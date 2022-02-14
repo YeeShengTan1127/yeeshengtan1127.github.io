@@ -106,6 +106,7 @@
     opacity: 1;
     transition: all 0.5s;
     z-index: 1;
+    padding-left: 0 !important;
   }
 
   .nav-links {
@@ -113,6 +114,7 @@
     padding: 2rem;
     width: 100%;
     display: table;
+    color: #242424 !important;
   }
 
   .nav-links:hover {
@@ -164,5 +166,9 @@
     background: #fff;
     color: #242424;
     transition: 250ms;
+  }
+
+  .nav-item.nav-contacts {
+    margin-top: 345px;
   }
 }
