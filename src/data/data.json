@@ -11,6 +11,7 @@
     {
       "src": "/images/salon-hair.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Hair Styling",
       "id": "HairStyling",
       "path": "/services/HairStyling",
@@ -21,82 +22,87 @@
         { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
         { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
       ],
-      "Order": 1
+      "Order": 0
     },
     {
       "src": "/images/salon-nail.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Nail Treatment",
       "id": "NailTreatment",
       "path": "/services/NailTreatment",
       "pricelist": [
-        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
-        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
-        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
-        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
-        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+        { "sn": 1, "name": "Nail_Treatment_1", "price": "$200" },
+        { "sn": 2, "name": "Nail_Treatment_2", "price": "$300" },
+        { "sn": 3, "name": "Nail_Treatment_3", "price": "$400" },
+        { "sn": 4, "name": "Nail_Treatment_4", "price": "$500" },
+        { "sn": 5, "name": "Nail_Treatment_5", "price": "$600" }
       ],
-      "Order": 2
+      "Order": 1
     },
     {
       "src": "/images/salon-facial.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Facial & Skin Care",
       "id": "FacialSkinCare",
       "path": "/services/FacialSkinCare",
       "pricelist": [
-        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
-        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
-        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
-        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
-        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+        { "sn": 1, "name": "Facial_SkinCare_1", "price": "$200" },
+        { "sn": 2, "name": "Facial_SkinCare_2", "price": "$300" },
+        { "sn": 3, "name": "Facial_SkinCare_3", "price": "$400" },
+        { "sn": 4, "name": "Facial_SkinCare_4", "price": "$500" },
+        { "sn": 5, "name": "Facial_SkinCare_5", "price": "$600" }
       ],
-      "Order": 3
+      "Order": 2
     },
     {
       "src": "/images/salon-hairRemoval.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Hair Removal",
       "id": "HairRemoval",
       "path": "/services/HairRemoval",
       "pricelist": [
-        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
-        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
-        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
-        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
-        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+        { "sn": 1, "name": "Hair_Removal_1", "price": "$200" },
+        { "sn": 2, "name": "Hair_Removal_2", "price": "$300" },
+        { "sn": 3, "name": "Hair_Removal_3", "price": "$400" },
+        { "sn": 4, "name": "Hair_Removal_4", "price": "$500" },
+        { "sn": 5, "name": "Hair_Removal_5", "price": "$600" }
       ],
-      "Order": 4
+      "Order": 3
     },
     {
       "src": "/images/salon-massage.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Massages",
       "id": "Massages",
       "path": "/services/Massages",
       "pricelist": [
-        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
-        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
-        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
-        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
-        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+        { "sn": 1, "name": "Massages_1", "price": "$200" },
+        { "sn": 2, "name": "Massages_2", "price": "$300" },
+        { "sn": 3, "name": "Massages_3", "price": "$400" },
+        { "sn": 4, "name": "Massages_4", "price": "$500" },
+        { "sn": 5, "name": "Massages_5", "price": "$600" }
       ],
-      "Order": 5
+      "Order": 4
     },
     {
       "src": "/images/salon-aroma.jpg",
       "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
+      "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       "label": "Aromatherapy",
       "id": "Aromatherapy",
       "path": "/services/Aromatherapy",
       "pricelist": [
-        { "sn": 1, "name": "Hair_Styling_1", "price": "$200" },
-        { "sn": 2, "name": "Hair_Styling_2", "price": "$300" },
-        { "sn": 3, "name": "Hair_Styling_3", "price": "$400" },
-        { "sn": 4, "name": "Hair_Styling_4", "price": "$500" },
-        { "sn": 5, "name": "Hair_Styling_5", "price": "$600" }
+        { "sn": 1, "name": "Aroma_1", "price": "$200" },
+        { "sn": 2, "name": "Aroma_2", "price": "$300" },
+        { "sn": 3, "name": "Aroma_3", "price": "$400" },
+        { "sn": 4, "name": "Aroma_4", "price": "$500" },
+        { "sn": 5, "name": "Aroma_5", "price": "$600" }
       ],
-      "Order": 6
+      "Order": 5
     }
   ]
 }
