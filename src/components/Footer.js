@@ -9,16 +9,14 @@ function Footer() {
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
-            <h2>Company</h2>
+            <h2>
+              <Link to="/">Company</Link>
+            </h2>
             <Link to="/about">About Us</Link>
-            <Link to="/">Our Services</Link>
-            <Link to="/">Careers</Link>
+            <Link to="/services">Our Services</Link>
+            <Link to="/location">Location</Link>
           </div>
-          <div className="footer-link-items">
-            <h2>Contact Us</h2>
-            <Link to="/">Our Contacts</Link>
-            <Link to="/">Location</Link>
-          </div>
+
           <div className="footer-link-items">
             <h2>Social Media</h2>
             <div className="social-icons">

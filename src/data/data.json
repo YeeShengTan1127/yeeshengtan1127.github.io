@@ -104,5 +104,17 @@
       ],
       "Order": 5
     }
+  ],
+  "locations": [
+    {
+      "Order": 0,
+      "Name": "Bukit Panjang",
+      "Address": "#01-02, Bukit Pangjang Street 12, 600200 Singapore",
+      "Phone": "+65 60002033",
+      "Mobile": "+65 98761234",
+      "Email": "beauty@mail.com",
+      "BusinessHour": "10.00 am - 5.00 pm",
+      "Position": [1.38275, 103.76238]
+    }
   ]
 }

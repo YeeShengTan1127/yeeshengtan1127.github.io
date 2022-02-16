@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../App.css";
+import data from "../../data/data.json";
+import LocationSection from "../LocationSection";
 
 export default function Contacts() {
-  return <h1 className="contacts">Contacts</h1>;
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+  return (
+    <>
+      <h1 className="contacts">Location</h1>
+      <LocationSection data={data.locations} />
+    </>
+  );
 }

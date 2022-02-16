@@ -7,7 +7,7 @@ function CarouselSection({ data, selected, changeSelected }) {
   const [selectedIndex, setSelectedIndex] = useState(selected);
 
   useEffect(() => {
-    if (selected) setSelectedIndex(selected);
+    setSelectedIndex(selected);
   }, [selected]);
 
   return (

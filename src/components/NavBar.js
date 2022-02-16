@@ -74,7 +74,6 @@ function NavBar() {
                 to="/services"
                 className="nav-links"
                 onClick={() => {
-                  console.log(dropdown);
                   if (window.innerWidth > 960) closeMobileMenu();
                   else setDropDown(!dropdown);
                 }}
@@ -90,11 +89,11 @@ function NavBar() {
             </li>
             <li className={dropdown ? "nav-item nav-contacts" : "nav-ite"}>
               <Link
-                to="/contacts"
+                to="/location"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contacts
+                Location
               </Link>
             </li>
           </ul>

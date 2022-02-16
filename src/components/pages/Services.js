@@ -16,15 +16,17 @@ export default function Services() {
     setSelectedData(data.services.filter((x) => x.Order === item));
   };
 
-  useEffect(() => {
+  const initial = () => {
     window.scroll(0, 0);
-    if (name) {
-      var newDataArr = data.services.filter((x) => x.id === name);
-      setSelectedData(newDataArr);
-      if (newDataArr.length > 0) setSelected(newDataArr[0].Order);
-    }
+    var newDataArr = data.services.filter((x) => x.id === name);
+    setSelectedData(newDataArr);
+    if (newDataArr.length > 0) setSelected(newDataArr[0].Order);
+  };
+
+  useEffect(() => {
+    initial();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [name]);
 
   return (
     <>
@@ -33,16 +35,12 @@ export default function Services() {
           {selectedData.length > 0 ? selectedData[0].label : "Services"}
         </h1>
       )}
-      {name && (
-        <>
-          <CarouselSection
-            data={data.services}
-            selected={selected}
-            changeSelected={changeSelected}
-          />
-          <ContentSection data={selectedData} />
-        </>
-      )}
+      <CarouselSection
+        data={data.services}
+        selected={selected}
+        changeSelected={changeSelected}
+      />
+      <ContentSection data={selectedData} />
     </>
   );
 }

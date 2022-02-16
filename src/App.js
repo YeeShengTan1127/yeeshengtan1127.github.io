@@ -33,7 +33,7 @@ function App() {
           <Route path="/services/" element={<Services />}>
             <Route path="/services/:name" element={<Services />} />
           </Route>
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/location" element={<Contacts />} />
         </Routes>
         {showScroll && (
           <StyledButton
