@@ -1,9 +1,7 @@
-.back_to_top {
+.whatsapp_button {
   display: block !important;
-  background: #f2f2f2 !important;
-  color: #242424 !important;
   position: fixed !important;
-  bottom: 12% !important;
+  bottom: 3% !important;
   right: 3% !important;
   height: 50px !important;
   width: 50px !important;
@@ -14,6 +12,14 @@
   transition: all 0.3s ease-in-out;
 }
 
-.back_to_top:hover {
+.whatsapp_button:hover {
   transform: scale(1.1);
+}
+
+.whatsapp_button span {
+  display: none;
+}
+
+.whatsapp_button i {
+  font-size: 30px;
 }

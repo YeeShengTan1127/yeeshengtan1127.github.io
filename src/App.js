@@ -8,6 +8,7 @@ import Contacts from "./components/pages/Contacts";
 import Home from "./components/pages/Home";
 import Services from "./components/pages/Services";
 import StyledButton from "./components/StyledButton";
+import WhatsappButton from "./components/WhatsappButton";
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -43,6 +44,7 @@ function App() {
             children={<i className="fa fa-arrow-up" />}
           />
         )}
+        <WhatsappButton />
         <Footer />
       </Router>
     </>
