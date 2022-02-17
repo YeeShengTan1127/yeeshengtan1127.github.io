@@ -4,17 +4,11 @@ import { Link } from "react-router-dom";
 import "./CarouselSection.css";
 
 function CarouselSection({ data, selected, changeSelected }) {
-  const [selectedIndex, setSelectedIndex] = useState(selected);
-
-  useEffect(() => {
-    setSelectedIndex(selected);
-  }, [selected]);
-
   return (
     <Carousel
       fade
-      activeIndex={selectedIndex}
-      onSelect={setSelectedIndex}
+      activeIndex={selected}
+      onSelect={changeSelected}
       interval={selected != null ? null : 1000}
     >
       {data &&
@@ -24,7 +18,7 @@ function CarouselSection({ data, selected, changeSelected }) {
               <Link
                 to={e.id}
                 className="carousel-wrapper"
-                onClick={() => changeSelected(selectedIndex)}
+                onClick={() => changeSelected(selected)}
               >
                 <img
                   className={"d-block w-100 carousel-item-img"}

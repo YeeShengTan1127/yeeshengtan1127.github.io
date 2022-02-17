@@ -30,11 +30,7 @@ export default function Services() {
 
   return (
     <>
-      {!name && (
-        <h1 className="services">
-          {selectedData.length > 0 ? selectedData[0].label : "Services"}
-        </h1>
-      )}
+      {!name && <h1 className="services">{"Services"}</h1>}
       <CarouselSection
         data={data.services}
         selected={selected}

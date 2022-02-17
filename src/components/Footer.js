@@ -20,30 +20,30 @@ function Footer() {
           <div className="footer-link-items">
             <h2>Social Media</h2>
             <div className="social-icons">
-              <Link
-                to="/"
+              <a
+                href="https://www.facebook.com/zuck"
                 target={"_blank"}
                 aria-label="Facebook"
                 className="social-icon-link facebook"
               >
                 <i className="fab fa-facebook-f"></i>
-              </Link>
-              <Link
-                to="/"
+              </a>
+              <a
+                href="https://www.instagram.com/singapore/?hl=en"
                 target={"_blank"}
                 aria-label="Instagram"
                 className="social-icon-link instagram"
               >
                 <i className="fab fa-instagram"></i>
-              </Link>
-              <Link
-                to="/"
+              </a>
+              <a
+                href="https://wa.me/6596129066?text=Hi%2C+I+just+visited+http%3A%2F%2Flocalhost%3A3000%2Fabout+.+Could+you+please+provide+more+info%3F"
                 target={"_blank"}
                 aria-label="Whatsapp"
                 className="social-icon-link whatsapp"
               >
                 <i className="fab fa-whatsapp"></i>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

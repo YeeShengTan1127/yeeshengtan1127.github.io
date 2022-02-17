@@ -11,6 +11,7 @@ import StyledButton from "./components/StyledButton";
 import WhatsappButton from "./components/WhatsappButton";
 
 function App() {
+  const currentURL = window.location.href;
   const [showScroll, setShowScroll] = useState(false);
 
   useEffect(() => {
@@ -23,7 +24,13 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
+  console.log(
+    encodeURIComponent(
+      "Hi, I just visited " +
+        currentURL +
+        " . Could you please provide more info?"
+    )
+  );
   return (
     <>
       <Router>
@@ -44,7 +51,14 @@ function App() {
             children={<i className="fa fa-arrow-up" />}
           />
         )}
-        <WhatsappButton />
+        <WhatsappButton
+          phoneNumber={"6596129066"}
+          text={
+            "Hi, I just visited your website, " +
+            currentURL +
+            " . Could you please provide more info on your services?"
+          }
+        />
         <Footer />
       </Router>
     </>

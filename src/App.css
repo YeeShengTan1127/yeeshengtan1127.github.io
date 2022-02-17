@@ -40,7 +40,7 @@ a:hover {
 
 .services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/public/images/salon-services2.jpg");
+    url("/public/images/salon-services2.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ a:hover {
 
 .contacts {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/public/images/img-services.jpg");
+    url("/public/images/img-services.jpeg");
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@ a:hover {
 
 .about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/public/images/img-services.jpg");
+    url("/public/images/img-services.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
