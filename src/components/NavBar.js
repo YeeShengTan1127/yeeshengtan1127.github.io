@@ -1,32 +1,58 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
+import data from "../data/data.json";
+import DropDown from "./DropDown";
 import "./NavBar.css";
 import data from "../data/data.json";
 
 function NavBar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [dropdown, setDropDown] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) setButton(false);
-    else setButton(true);
+  const handleClick = () => {
+    setClick(!click);
+    setDropDown(false);
+  };
+  const closeMobileMenu = () => {
+    setClick(false);
+    setDropDown(false);
   };
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  window.addEventListener("scroll", (e) => {
+    const nav = document.querySelector(".navbar");
+    if (window.pageYOffset > 0) {
+      nav.classList.add("add-shadow");
+    } else {
+      nav.classList.remove("add-shadow");
+    }
+  });
 
-  window.addEventListener("resize", showButton);
+  const backToTop = () => {
+    window.scroll(0, 0);
+  };
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) setDropDown(false);
+    else setDropDown(true);
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) setDropDown(dropdown);
+    else setDropDown(false);
+  };
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link
+            to="/"
+            className="navbar-logo"
+            onClick={() => {
+              closeMobileMenu();
+              backToTop();
+            }}
+          >
             {data.CompanyName}
           </Link>
           <div className="menu-icon" onClick={handleClick}>
@@ -43,27 +69,38 @@ function NavBar() {
                 About
               </Link>
             </li>
-            <li className="nav-item">
+            <li
+              className="nav-item"
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
+            >
               <Link
                 to="/services"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={() => {
+                  if (window.innerWidth > 960) closeMobileMenu();
+                  else setDropDown(!dropdown);
+                }}
               >
-                Services
+                Services <i className="fas fa-caret-down" />
               </Link>
+              {dropdown && (
+                <DropDown
+                  data={data.services}
+                  closeMobileMenu={closeMobileMenu}
+                />
+              )}
             </li>
-
-            <li className="nav-item">
+            <li className={dropdown ? "nav-item nav-contacts" : "nav-ite"}>
               <Link
-                to="/contacts"
+                to="/location"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contacts
+                Location
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle={"btn--outline"}>Test</Button>}
         </div>
       </nav>
     </>

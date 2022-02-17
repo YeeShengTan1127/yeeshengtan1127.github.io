@@ -1,0 +1,25 @@
+.whatsapp_button {
+  display: block !important;
+  position: fixed !important;
+  bottom: 3% !important;
+  right: 3% !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: 0 5px 10px #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp_button:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp_button span {
+  display: none;
+}
+
+.whatsapp_button i {
+  font-size: 30px;
+}

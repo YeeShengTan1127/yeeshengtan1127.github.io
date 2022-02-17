@@ -1,0 +1,8 @@
+.leafletMap {
+  height: 35vh;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 500 !important;
+}

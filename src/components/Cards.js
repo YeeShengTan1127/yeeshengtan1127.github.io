@@ -2,27 +2,27 @@ import React from "react";
 import CardItem from "./CardItem";
 import "./Cards.css";
 import data from "../data/data.json";
+import { Col, Row } from "react-bootstrap";
 
-function Cards() {
+function Cards({ ExtraInfo }) {
   return (
-    <div className="cards">
-      <h1>Check out these EPIC Destinations!</h1>
+    <div id={"Menu"} className="cards">
       <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
-            {data.images.map((e, index) => {
-              return (
+        {ExtraInfo}
+        <Row xs={1} md={3} className={"g-4"}>
+          {data.services.map((e, index) => {
+            return (
+              <Col key={"cardItem-" + index}>
                 <CardItem
-                  key={"cardItem-" + index}
                   src={e.src}
                   text={e.text}
                   label={e.label}
                   path={e.path}
                 />
-              );
-            })}
-          </ul>
-        </div>
+              </Col>
+            );
+          })}
+        </Row>
       </div>
     </div>
   );
