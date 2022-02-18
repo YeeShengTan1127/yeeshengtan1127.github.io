@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./CarouselSection.css";

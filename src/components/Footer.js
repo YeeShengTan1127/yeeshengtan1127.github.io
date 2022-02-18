@@ -23,6 +23,7 @@ function Footer() {
               <a
                 href="https://www.facebook.com/zuck"
                 target={"_blank"}
+                rel="noreferrer"
                 aria-label="Facebook"
                 className="social-icon-link facebook"
               >
@@ -31,6 +32,7 @@ function Footer() {
               <a
                 href="https://www.instagram.com/singapore/?hl=en"
                 target={"_blank"}
+                rel="noreferrer"
                 aria-label="Instagram"
                 className="social-icon-link instagram"
               >
@@ -39,6 +41,7 @@ function Footer() {
               <a
                 href="https://wa.me/6596129066?text=Hi%2C+I+just+visited+http%3A%2F%2Flocalhost%3A3000%2Fabout+.+Could+you+please+provide+more+info%3F"
                 target={"_blank"}
+                rel="noreferrer"
                 aria-label="Whatsapp"
                 className="social-icon-link whatsapp"
               >

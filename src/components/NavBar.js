@@ -91,7 +91,16 @@ function NavBar() {
                 />
               )}
             </li>
-            <li className={dropdown ? "nav-item nav-contacts" : "nav-ite"}>
+            <li className={dropdown ? "nav-item nav-gallery" : "nav-item"}>
+              <Link
+                to="/gallery"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Gallery
+              </Link>
+            </li>
+            <li className={"nav-item"}>
               <Link
                 to="/location"
                 className="nav-links"
