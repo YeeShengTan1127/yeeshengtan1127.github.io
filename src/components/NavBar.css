@@ -41,7 +41,7 @@
 
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
   list-style: none;
   text-align: center;
@@ -109,9 +109,13 @@
     padding-left: 0 !important;
   }
 
+  .nav-item {
+    height: 60px;
+  }
+
   .nav-links {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
     color: #242424 !important;
@@ -168,7 +172,7 @@
     transition: 250ms;
   }
 
-  .nav-item.nav-contacts {
-    margin-top: 345px;
+  .nav-item.nav-gallery {
+    margin-top: 330px;
   }
 }

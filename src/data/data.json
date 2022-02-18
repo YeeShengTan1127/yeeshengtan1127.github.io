@@ -116,5 +116,19 @@
       "BusinessHour": "10.00 am - 5.00 pm",
       "Position": [1.38275, 103.76238]
     }
+  ],
+  "gallery": [
+    { "id": 1, "imgSrc": "https://cataas.com/cat?type=md" },
+    { "id": 2, "imgSrc": "https://cataas.com/cat?type=sq" },
+    { "id": 3, "imgSrc": "https://cataas.com/cat?type=sm" },
+    { "id": 4, "imgSrc": "https://cataas.com/cat?type=or" },
+    { "id": 5, "imgSrc": "https://cataas.com/cat?type=or" },
+    { "id": 6, "imgSrc": "https://cataas.com/cat?type=sm" },
+    { "id": 7, "imgSrc": "https://cataas.com/cat?type=sq" },
+    { "id": 8, "imgSrc": "https://cataas.com/cat?type=or" },
+    { "id": 9, "imgSrc": "https://cataas.com/cat?type=sq" },
+    { "id": 10, "imgSrc": "https://cataas.com/cat?type=md" },
+    { "id": 11, "imgSrc": "https://cataas.com/cat?type=sq" },
+    { "id": 12, "imgSrc": "https://cataas.com/cat?type=md" }
   ]
 }

@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import About from "./components/pages/About";
 import Contacts from "./components/pages/Contacts";
+import Gallery from "./components/pages/Gallery";
 import Home from "./components/pages/Home";
 import Services from "./components/pages/Services";
 import StyledButton from "./components/StyledButton";
@@ -24,13 +25,7 @@ function App() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-  console.log(
-    encodeURIComponent(
-      "Hi, I just visited " +
-        currentURL +
-        " . Could you please provide more info?"
-    )
-  );
+
   return (
     <>
       <Router>
@@ -41,6 +36,7 @@ function App() {
           <Route path="/services/" element={<Services />}>
             <Route path="/services/:name" element={<Services />} />
           </Route>
+          <Route path="/gallery" element={<Gallery />} />
           <Route path="/location" element={<Contacts />} />
         </Routes>
         {showScroll && (

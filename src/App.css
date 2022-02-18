@@ -16,7 +16,8 @@
 
 .services,
 .contacts,
-.about {
+.about,
+.gallery {
   display: flex;
   height: 35vh;
   align-items: center;
@@ -26,7 +27,8 @@
 
 .services,
 .contacts,
-.about {
+.about,
+.gallery {
   margin-bottom: 0 !important;
 }
 
@@ -50,7 +52,7 @@ a:hover {
 
 .contacts {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/public/images/img-services.jpeg");
+    url("/public/images/salon-contacts.jpeg");
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -60,7 +62,17 @@ a:hover {
 
 .about {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/public/images/img-services.jpeg");
+    url("/public/images/salon-services.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.gallery {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/public/images/salon-gallery.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +83,8 @@ a:hover {
 @media screen and (max-width: 960px) {
   .services,
   .contacts,
-  .about {
+  .about,
+  .gallery {
     font-size: 70px;
   }
 }
@@ -79,7 +92,8 @@ a:hover {
 @media screen and (max-width: 768px) {
   .services,
   .contacts,
-  .about {
+  .about,
+  .gallery {
     font-size: 50px;
   }
 }
