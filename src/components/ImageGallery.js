@@ -13,7 +13,7 @@ function ImageGallery({ data }) {
   return (
     <>
       <div className={model ? "model open" : "model"}>
-        <img src={tempImgSrc} />
+        <img alt={"ModelPhoto"} src={tempImgSrc} />
         <i className="fa fa-times" onClick={() => setModel(false)} />
       </div>
       <div className="imageGallery pt-3">
@@ -24,7 +24,7 @@ function ImageGallery({ data }) {
               key={"image-" + index}
               onClick={() => getImg(e.imgSrc)}
             >
-              <img src={e.imgSrc} className="w-100" />
+              <img alt={e.imgSrc} src={e.imgSrc} className="w-100" />
             </div>
           );
         })}
