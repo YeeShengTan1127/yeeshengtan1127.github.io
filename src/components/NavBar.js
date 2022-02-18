@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import data from "../data/data.json";
 import DropDown from "./DropDown";
 import "./NavBar.css";
-import data from "../data/data.json";
 
 function NavBar() {
   const [click, setClick] = useState(false);
