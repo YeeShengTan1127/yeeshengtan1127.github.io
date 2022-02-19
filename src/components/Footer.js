@@ -14,6 +14,7 @@ function Footer() {
             </h2>
             <Link to="/about">About Us</Link>
             <Link to="/services">Our Services</Link>
+            <Link to="/gallery">Gallery</Link>
             <Link to="/location">Location</Link>
           </div>
 
