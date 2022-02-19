@@ -3,6 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import "../../App.css";
 
 export default function About() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
     <>
       <h1 className="about">About</h1>
