@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../App.css";
 import data from "../../data/data.json";
 import ImageGallery from "../ImageGallery";
